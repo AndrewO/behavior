@@ -1,9 +1,25 @@
-begin
-  require File.dirname(__FILE__) + '/../../../../spec/spec_helper'
-rescue LoadError
-  puts "You need to install rspec in your base app"
-  exit
-end
+# begin
+#   require File.dirname(__FILE__) + '/../../../../spec/spec_helper'
+# rescue LoadError
+#   puts "You need to install rspec in your base app"
+#   exit
+# end
+require 'rubygems'
+require 'rspec'
+require 'machinist'
+# require 'rails'
+require 'active_support'
+require 'action_pack'
+require 'action_controller'
+require 'active_record'
+require 'action_view'
+require 'action_view/helpers'
+
+$:.unshift(File.dirname(__FILE__) + "/../")
+
+require 'lib/behavior'
+require 'app/models/behavior_config'
+require 'app/helpers/behavior_helper'
 
 require File.dirname(__FILE__) + '/blueprints'
 

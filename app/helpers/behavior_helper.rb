@@ -1,4 +1,6 @@
 module BehaviorHelper
+  include ActionView::Helpers::FormTagHelper
+  include ActionView::Helpers::FormOptionsHelper
   
   def behavior_tag(conf)
     case config.meta[conf][:type]
