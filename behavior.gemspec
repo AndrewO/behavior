@@ -39,7 +39,6 @@ Gem::Specification.new do |s|
      "spec/behavior_spec.rb",
      "spec/blueprints.rb",
      "spec/database.yml",
-     "spec/debug.log",
      "spec/helpers/behavior_helper_spec.rb",
      "spec/schema.rb",
      "spec/spec_helper.rb"
